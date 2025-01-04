@@ -1,0 +1,21 @@
+Este proyecto se desarrollará dentro de los límites de la infraestructura universitaria disponible, cumpliendo con los objetivos propuestos y permitiendo la ejecución de todas las funciones del servidor bajo las restricciones del entorno técnico de la Universidad. Los alcances abarcan tanto la capacidad de respuesta como la conexión segura para los usuarios de la aplicación, quienes deberán acceder al servidor a través de la VPN institucional FortiClient o desde la red local en el área conocida como la Jack's Cave, donde se encuentra físicamente ubicado el equipo.
+
+Dada la restricción en la configuración de red y la falta de soporte para port-forwarding al exterior de la Universidad, se define que las conexiones externas no podrán realizarse sin acceso previo a la VPN universitaria o sin una conexión local directa al servidor. Esto introduce una capa adicional en el proceso de conexión, lo cual puede tener un impacto en la eficiencia de respuesta del sistema debido a la latencia introducida por la VPN.
+
+Además, el proyecto está limitado al uso del equipo proporcionado en las instalaciones de la Universidad. Dado que no fue posible realizar expansiones o modificaciones en el hardware disponible, la infraestructura actual impone un límite en la escalabilidad del sistema. Este proyecto, por lo tanto, se ha diseñado cuidadosamente para optimizar el rendimiento dentro de los recursos de procesamiento, almacenamiento y red que el equipo de la Universidad permite.
+
+Las pruebas de seguridad realizadas en este proyecto se enfocaron exclusivamente a nivel de software debido a que el servidor utilizado formaba parte de la infraestructura de la universidad, la cual contaba con políticas y configuraciones de seguridad preestablecidas que no estuvieron bajo nuestro control directo. Estas condiciones limitaron las mejoras adicionales que pudimos implementar a nivel de hardware o configuraciones específicas. Sin embargo, el enfoque en software fue válido, ya que según el NIST Cybersecurity Framework \cite{NISTCybersecurityFramework}, la mayoría de las vulnerabilidades críticas en servidores están relacionadas con configuraciones y software, no con el hardware. Además, este diseño aseguró que el sistema pudiera ser trasladado a otros servidores en el futuro, manteniendo la robustez de las medidas implementadas sin depender de un entorno físico específico. Herramientas como Lynis fueron diseñadas para evaluar y garantizar un nivel adecuado de seguridad en sistemas que podían operar en entornos diversos, haciendo este enfoque flexible y alineado con estándares modernos de seguridad.
+
+\section{Consideraciones adicionales}
+
+\begin{enumerate}
+    \item \textbf{Seguridad y restricciones de acceso:} Las pruebas de acceso remoto estarán sujetas a las políticas de seguridad de la Universidad, limitándose al entorno universitario, lo cual asegura un control estricto sobre los datos y recursos.
+  
+    \item \textbf{Pruebas de carga y estrés limitadas al entorno interno:} Las evaluaciones de eficiencia y respuesta se basarán en simulaciones dentro del sistema de la Universidad, dado que la infraestructura no se encuentra abierta al público externo. Esto limita las pruebas a las condiciones internas del entorno universitario, lo cual deberá tenerse en cuenta para futuras escalas de uso.
+  
+    \item \textbf{Conformidad con los recursos de red de la Universidad:} Debido a la dependencia de la red de la Universidad, el rendimiento del servidor está condicionado a la calidad de la conexión local y a la estabilidad de la VPN, factores externos que pueden influir en la velocidad y confiabilidad del sistema.
+  
+    \item \textbf{Limitación en las pruebas de carga por duración del video:} Debido a la naturaleza del modelo y el material disponible, las pruebas de carga se realizaron exclusivamente con videos de una duración de 2 segundos.
+\end{enumerate}
+
+Estas precisiones establecen claramente el alcance dentro de los recursos disponibles y el entorno controlado de la Universidad, asegurando que el proyecto funcione de manera efectiva bajo las condiciones actuales y anticipando limitaciones para posibles expansiones o cambios futuros.
