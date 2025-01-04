@@ -1,0 +1,27 @@
+# Carpetas de entornos virtuales
+venv/
+
+# Archivos de configuración sensibles
+app/config.py
+.env
+
+# Videos (si los almacenas en una carpeta específica)
+videos/
+
+# Archivos compilados de Python
+*.pyc
+*.pyo
+__pycache__/
+
+# Archivos y carpetas creados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de logs
+*.log
+
+# Archivos de migración de bases de datos de Flask
+migrations/
+
+# Sockets Unix (opcional si estás usando gunicorn con socket)
+*.sock
